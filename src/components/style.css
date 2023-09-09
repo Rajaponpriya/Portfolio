@@ -1,0 +1,7 @@
+
+.square-image {
+    width: 150px; /* Set the desired width */
+    height: 150px; /* Set the same height to make it square */
+    border: 2px solid blue; /* Add a blue border with a 2px width */
+    object-fit: cover; /* Maintain aspect ratio and cover the square container */
+  }
