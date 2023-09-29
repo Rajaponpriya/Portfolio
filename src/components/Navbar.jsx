@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { FaPinterestP } from "react-icons/fa";
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
   const [open, setOpen] = useState(false);
@@ -26,7 +25,7 @@ const Navbar = () => {
         <div className="mx-7">
           <h4 className="text-4xl uppercase font-bold ">
           <p className="inline-flex items-center ">
-          <FaPinterestP/><span className="text-cyan-600">ri</span>ya
+          P<span className="text-cyan-600">ri</span>ya
           </p>
           </h4>
         </div>

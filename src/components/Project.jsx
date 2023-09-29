@@ -17,6 +17,7 @@ const Project = () => {
       live_link: "#",
     }
   ];
+
   return (
     <section id="projects" className="py-10 text-white">
         <div className="text-center">
@@ -53,8 +54,71 @@ const Project = () => {
              
             ))}
             </div>
+    
+
+    
+
     </section>
   );
 };
 
 export default Project;
+
+
+
+/*
+
+import React, { useState } from 'react';
+
+function ResumeUploader() {
+  const [resume, setResume] = useState(null);
+
+  // Function to handle file upload
+  const handleUpload = (event) => {
+    const selectedFile = event.target.files[0];
+    if (selectedFile) {
+      setResume(selectedFile);
+    }
+  };
+
+  // Function to handle download
+  const handleDownload = () => {
+    if (resume) {
+      const downloadUrl = URL.createObjectURL(resume);
+      const a = document.createElement('a');
+      a.href = downloadUrl;
+      a.download = 'resume.pdf'; // Change the filename as needed
+      document.body.appendChild(a);
+      a.click();
+      URL.revokeObjectURL(downloadUrl);
+    }
+  };
+
+  return (
+    <div>
+      <h2>Resume Uploader and Downloader</h2>
+      <input type="file" accept=".pdf" onChange={handleUpload} />
+      <button onClick={handleDownload} disabled={!resume}>
+        Download Resume
+      </button>
+    </div>
+  );
+}
+
+export default ResumeUploader;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

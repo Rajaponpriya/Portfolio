@@ -6,7 +6,7 @@ const Contact = () => {
       <section id="about" className="py-10 text-white">
         <div className="text-center mt-8">
           <h3 className="text-4xl font-semibold">
-            Contact <span className="text-cyan-600">Me</span>
+            Contact <span className="text-cyan-600">Me</span> 
           </h3>
           <div className="text-gray-400 my-3 text-3xl ">
           <p >rajaponpriya@gmail.com</p>
@@ -18,6 +18,7 @@ const Contact = () => {
           <div  className="hover:text-cyan-600">
           <a href="https://github.com/Rajaponpriya" >Github</a>
           </div>
+          
           </div>
         </div>
       </section>

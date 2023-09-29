@@ -17,9 +17,10 @@ const About = () => {
           <div className="p-2">
             <div className="text-gray-300 my-3">
               <p className="text-2xl text-justify leading-7 w-11/12 mx-auto">
-                Graduate of Computer science with the interest in coding and full-stack development. 
-                Having desire to associate with a dynamic organization that will alow me to utilize 
-                my abilies in the fields while providing me with opportunites for growth. 
+                Graduate of Computer science with interests in coding, building new  Web Technologies and Products and also in areas related to Blockchain.
+                <br></br>
+                Whenever possible, I also apply my passion for developing products with Node.js and Modern Javascript Library 
+                and Frameworks  like React.js 
               </p>
               <br></br>
               <div className="text-2xl text-justify leading-7 w-11/12 mx-auto text-white">
@@ -37,7 +38,7 @@ const About = () => {
               <div className="flex mt-10 items-center justify-center gap-7">
                 {info.map((content) => (
                   <div key={content.text}>
-                    <h3 className="md:text-4xl text-2xl font-semibold text-white hover:bg-gray-400">
+                    <h3 className="md:text-5xl text-3xl font-semibold text-white hover:bg-gray-400">
                       {content.count}
                       <span className="text-cyan-600">+</span>{" "}
                     </h3>
@@ -56,17 +57,3 @@ const About = () => {
 };
 
 export default About;
-
-/*
-EDUCATION
-
-B.E.COMPUTER SCIENCE AND ENGINEERING
-COIMBATORE INSTITUTE OF TECHNOLOGY
-GPA: 8.7
-2021 – 2025
-
-HIGHER SCHOOL SECONDARY CERTIFICATE
-KENDRIYA VIDHYALAYA
-Percentage: 95
-
-*/

@@ -1,25 +1,47 @@
-
+import { DiJavascript1, DiReact, DiNodejs, DiPython, DiJava, } from "react-icons/di";
+import { CgCPlusPlus } from "react-icons/cg";
+import { SiSolidity, SiPostgresql,} from "react-icons/si";
 const Skills = () => {
     const skills = [
       {
-        name: "HTML",
+        icon: <CgCPlusPlus />,
         level: "Advance",
         count: 82,
       },
       {
-        name: "CSS",
+        icon: <DiJavascript1 />,
+        level: "Advance",
+        count: 82,
+      },
+      {
+        icon: <DiReact />,
         level: "Expect",
         count: 90,
       },
       {
-        name: "Node",
+        icon: <DiJava />,
+        level: "Intermediate",
+        count: 75,
+      },
+      {
+        icon: <SiSolidity />,
+        level: "Intermediate",
+        count: 75,
+      },
+      {
+        icon: <DiNodejs />,
         level: "Beginner",
         count: 45,
       },
       {
-        name: "React",
-        level: "Intermediate",
-        count: 75,
+        icon: <DiPython />,
+        level: "Beginner",
+        count: 45,
+      },
+      {
+        icon: <SiPostgresql />,
+        level: "Beginner",
+        count: 45,
       },
     ];
     return (
@@ -41,8 +63,8 @@ const Skills = () => {
                   }}
                   className="w-32 h-32 flex items-center justify-center rounded-full"
                 >
-                  <div className="text-3xl w-28 h-28 bg-gray-900 rounded-full flex items-center justify-center group-hover:text-cyan-600">
-                    {skill.name}
+                  <div className="text-6xl w-28 h-28 bg-gray-900 rounded-full flex items-center justify-center group-hover:text-cyan-600">
+                    {skill.icon}
                   </div>
                 </div>
                 <p className="text-xl mt-3">{skill.level}</p>
@@ -50,6 +72,7 @@ const Skills = () => {
             ))}
           </div>
         </div>
+        
       </section>
     );
   };
